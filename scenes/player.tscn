@@ -16,5 +16,6 @@ shape = SubResource( 1 )
 [node name="camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.741071, 0 )
 current = true
+far = 150.0
 
 [node name="hud" parent="." instance=ExtResource( 2 )]
