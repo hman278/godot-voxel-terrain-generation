@@ -1,8 +1,11 @@
 extends Node
 
+# this is what the world is generated under
 onready var world = $world
 onready var player = $player
+# used to cull chunks every timeout
 onready var cull_timer = $cull_timer
+# animation player used to change time of day
 onready var light_animp = $directional_light/animation_player
 
 var noise = OpenSimplexNoise.new()
@@ -11,14 +14,8 @@ var env = preload('res://default_env.tres')
 
 const CHUNK_SIZE = 64
 const TERRAIN_SIZE = 512
-const TERRAIN_HEIGHT = 10
+const TERRAIN_HEIGHT = 15
 var chunks: Dictionary = {} # contains the chunk and the origin of its blocks
-
-const TOP_COLOR_DAY = Color(0.64, 0.83, 0.94, 1)
-const HORIZON_COLOR_DAY = Color(0.83, 0.91, 0.98, 1)
-
-const TOP_COLOR_NIGHT= Color(0.1, 0.1, 0.1, 1)
-const HORIZON_COLOR_NIGHT = Color(0, 0, 0, 1)
 
 func _ready():
 	# configure
@@ -34,6 +31,8 @@ func _ready():
 			generate_chunk(Vector3(i, 0, j)) #leave y at 0
 	
 	cull_timer.connect('timeout', self, 'cull_chunks')
+	# change the values in this animation player to 
+	# get day length matching your needs
 	light_animp.play('day_night_cycle')
 
 # also handles vegetation
@@ -49,7 +48,7 @@ func generate_chunk(origin):
 			var pos = chunk_node.world_to_map(Vector3(x, y, z))
 			chunk_node.set_cell_item(pos.x, pos.y, pos.z, 0, 0)
 			
-			# tree generation
+			# tree generation, you can add more tree types here
 			randomize()
 			if int(rand_range(0, 150)) == 2:
 				for i in 3:
@@ -79,6 +78,3 @@ func cull_chunks():
 					chunk.visible = false
 			else:
 				chunk.visible = true
-
-
-

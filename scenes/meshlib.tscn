@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scenes/mesh.tscn" type="PackedScene" id=1]
 [ext_resource path="res://materials/tree.tres" type="Material" id=2]
-[ext_resource path="res://scenes/highlight_mesh.tscn" type="PackedScene" id=3]
 
 [node name="meshlib" type="Spatial"]
 
@@ -10,5 +9,3 @@
 
 [node name="bark" parent="." instance=ExtResource( 1 )]
 material/0 = ExtResource( 2 )
-
-[node name="highlight_mesh" parent="." instance=ExtResource( 3 )]

@@ -5,15 +5,13 @@
 [node name="gridmap" type="GridMap"]
 mesh_library = ExtResource( 1 )
 cell_size = Vector3( 1, 1, 1 )
-cell_octant_size = 4
+cell_octant_size = 16
 cell_center_y = false
 cell_scale = 0.5
-collision_layer = 2147483649
-collision_mask = 2147483649
 data = {
 "cells": PoolIntArray(  )
 }
 __meta__ = {
 "_editor_clip_": 0,
-"_editor_floor_": Vector3( 0, 0, 0 )
+"_editor_floor_": Vector3( 0, 2, 0 )
 }

@@ -19,13 +19,13 @@ config/name="supermarket-game"
 run/main_scene="res://scenes/scene.tscn"
 config/icon="res://icon.png"
 
-[autoload]
-
-global_immediate_geometry="*res://scripts/immediate_geometry.gd"
-
 [debug]
 
 settings/fps/force_fps=1000
+
+[display]
+
+window/vsync/use_vsync=false
 
 [input]
 
