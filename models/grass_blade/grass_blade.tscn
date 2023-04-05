@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Material" path="res://shaders/vegetation/grass_sway.tres" id="1_ay2xx"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ax320"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"format": 4097,
+"index_count": 12,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0, 4, 0, 7, 0, 5, 0, 4, 0, 6, 0, 7, 0),
+"name": "grass_ blades",
+"primitive": 3,
+"vertex_count": 8,
+"vertex_data": PackedByteArray(0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 0, 0, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 0, 0, 180, 16, 49, 180, 255, 255, 127, 191, 2, 0, 128, 191, 187, 244, 110, 50, 1, 0, 128, 191, 0, 0, 128, 63, 181, 244, 110, 178, 1, 0, 128, 63, 0, 0, 128, 191, 180, 16, 49, 52, 255, 255, 127, 63, 2, 0, 128, 63)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_w6wr4"]
+resource_name = "grass_blade_Plane"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0),
+"format": 4119,
+"index_count": 12,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0, 4, 0, 7, 0, 5, 0, 4, 0, 6, 0, 7, 0),
+"material": ExtResource("1_ay2xx"),
+"name": "grass_ blades",
+"primitive": 3,
+"vertex_count": 8,
+"vertex_data": PackedByteArray(0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 0, 0, 255, 127, 255, 127, 255, 255, 255, 191, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 0, 0, 255, 127, 255, 127, 255, 255, 255, 191, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 0, 0, 255, 127, 255, 127, 255, 255, 255, 191, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 0, 0, 255, 127, 255, 127, 255, 255, 255, 191, 180, 16, 49, 180, 255, 255, 127, 191, 2, 0, 128, 191, 0, 0, 255, 127, 255, 127, 255, 191, 187, 244, 110, 50, 1, 0, 128, 191, 0, 0, 128, 63, 0, 0, 255, 127, 255, 127, 255, 191, 181, 244, 110, 178, 1, 0, 128, 63, 0, 0, 128, 191, 0, 0, 255, 127, 255, 127, 255, 191, 180, 16, 49, 52, 255, 255, 127, 63, 2, 0, 128, 63, 0, 0, 255, 127, 255, 127, 255, 191)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ax320")
+
+[node name="Plane" type="MeshInstance3D"]
+transform = Transform3D(0.303109, 0, -0.175, 0, 0.35, 0, 0.175, 0, 0.303109, 0, 0, 0)
+mesh = SubResource("ArrayMesh_w6wr4")
+skeleton = NodePath("")

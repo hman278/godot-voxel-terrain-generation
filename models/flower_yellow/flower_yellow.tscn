@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://nd44itnxnn3e"]
+
+[ext_resource type="ArrayMesh" uid="uid://ix0kj0r5p3w2" path="res://models/flower_yellow/flower_yellow_mesh.tres" id="1_560a0"]
+
+[node name="Plane001" type="MeshInstance3D"]
+transform = Transform3D(0, -0.5, 0, -5.96046e-08, 0, -0.5, 0.5, 0, -5.96046e-08, 0.0260842, 0, -0.025492)
+mesh = ExtResource("1_560a0")
+skeleton = NodePath("")

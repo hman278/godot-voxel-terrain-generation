@@ -1,11 +1,59 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=12 format=3 uid="uid://bllgboder8iku"]
 
-[ext_resource path="res://scenes/mesh.tscn" type="PackedScene" id=1]
-[ext_resource path="res://materials/tree.tres" type="Material" id=2]
+[ext_resource type="PackedScene" uid="uid://dxr5glsxl34qk" path="res://scenes/mesh.tscn" id="1"]
+[ext_resource type="ArrayMesh" uid="uid://bnbidx4b6b8de" path="res://models/grass/grass_block.tres" id="2_wranl"]
+[ext_resource type="ArrayMesh" uid="uid://b7gl2q54a1afn" path="res://models/bark/new_array_mesh.tres" id="3_cf2kv"]
+[ext_resource type="ArrayMesh" uid="uid://cqs8417vedrcf" path="res://models/dirt/new_array_mesh.tres" id="3_lddf1"]
+[ext_resource type="PackedScene" path="res://models/grass_blade/grass_blade.tscn" id="5_4cn1f"]
+[ext_resource type="ArrayMesh" uid="uid://vwaavqc7waxk" path="res://models/grass_blade/new_array_mesh.tres" id="5_k3jeg"]
+[ext_resource type="ArrayMesh" uid="uid://umw35ajiyvke" path="res://models/leaves/leaf_mesh.tres" id="5_qgpcr"]
+[ext_resource type="ArrayMesh" uid="uid://de33v2787t2se" path="res://models/leaves/leaf_mesh_02.tres" id="6_uuhqx"]
+[ext_resource type="PackedScene" uid="uid://cqlbavqije27c" path="res://models/flower_red/flower_red.tscn" id="7_2td8k"]
+[ext_resource type="ArrayMesh" uid="uid://cl22dkp67qpll" path="res://models/bark_birch/birch_mesh.tres" id="8_4i3o6"]
+[ext_resource type="ArrayMesh" uid="uid://ix0kj0r5p3w2" path="res://models/flower_yellow/flower_yellow_mesh.tres" id="8_56yx3"]
 
-[node name="meshlib" type="Spatial"]
+[node name="meshlib" type="Node3D"]
 
-[node name="grass" parent="." instance=ExtResource( 1 )]
+[node name="grass" parent="." instance=ExtResource("1")]
+mesh = ExtResource("2_wranl")
 
-[node name="bark" parent="." instance=ExtResource( 1 )]
-material/0 = ExtResource( 2 )
+[node name="dirt" parent="." instance=ExtResource("1")]
+mesh = ExtResource("3_lddf1")
+
+[node name="bark_oak" parent="." instance=ExtResource("1")]
+mesh = ExtResource("3_cf2kv")
+
+[node name="bark_birch" parent="." instance=ExtResource("1")]
+mesh = ExtResource("8_4i3o6")
+
+[node name="leaves_oak" parent="." instance=ExtResource("1")]
+mesh = ExtResource("5_qgpcr")
+
+[node name="leaves_birch" parent="." instance=ExtResource("1")]
+mesh = ExtResource("6_uuhqx")
+
+[node name="grass_blade" parent="." instance=ExtResource("5_4cn1f")]
+transform = Transform3D(0.507599, 4.32735e-09, 0.0989982, -4.32735e-09, 0.517162, -4.18045e-10, -0.0989982, -4.18053e-10, 0.507598, 0, 0, 0.0227009)
+mesh = ExtResource("5_k3jeg")
+
+[node name="grass_blade2" parent="." instance=ExtResource("5_4cn1f")]
+transform = Transform3D(0.345719, 2.63746e-09, -0.315872, -3.91842e-09, 0.468291, -3.7854e-10, 0.315873, 2.92252e-09, 0.345718, -0.100821, -0.0534607, -0.0951664)
+mesh = ExtResource("5_k3jeg")
+
+[node name="grass_blade3" parent="." instance=ExtResource("5_4cn1f")]
+transform = Transform3D(0.335166, 2.71266e-09, -0.113604, -2.96121e-09, 0.353895, -2.86069e-10, 0.113604, 1.22151e-09, 0.335165, 0.0213458, -0.164342, 0.0803651)
+mesh = ExtResource("5_k3jeg")
+
+[node name="flower_red" parent="." instance=ExtResource("7_2td8k")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+
+[node name="flower_red2" parent="." instance=ExtResource("7_2td8k")]
+transform = Transform3D(0.738583, -0.415355, 1.81558e-08, 7.30719e-16, -3.70394e-08, -0.847364, 0.415355, 0.738583, -3.22845e-08, 0, -0.0645323, 0)
+
+[node name="flower_yellow" parent="." instance=ExtResource("7_2td8k")]
+transform = Transform3D(0.5, 0, 0, 0, -2.18557e-08, -0.5, 0, 0.5, -2.18557e-08, 0, 0, 0)
+mesh = ExtResource("8_56yx3")
+
+[node name="flower_yellow2" parent="." instance=ExtResource("7_2td8k")]
+transform = Transform3D(0.237884, -0.323851, 1.4156e-08, 0, -1.75646e-08, -0.401831, 0.323851, 0.237884, -1.03982e-08, 0.0015341, -0.0997727, 0.0900009)
+mesh = ExtResource("8_56yx3")

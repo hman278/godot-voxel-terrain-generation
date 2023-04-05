@@ -1,40 +1,44 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=3 uid="uid://c4swht1orp6tr"]
 
-[ext_resource path="res://textures/crosshair.png" type="Texture" id=1]
-[ext_resource path="res://scripts/hud.gd" type="Script" id=2]
+[ext_resource type="Script" path="res://scripts/hud.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://doi64wlmbjrjw" path="res://textures/crosshair/crosshair.png" id="2_8u8vt"]
+[ext_resource type="FontFile" uid="uid://b8v2htohy46ov" path="res://fonts/SFPixelate.ttf" id="3_dn54i"]
 
 [node name="hud" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -1.65665
-margin_top = -1.80054
-margin_right = 18.3434
-margin_bottom = 18.1995
-rect_scale = Vector2( 0.2, 0.2 )
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_8u8vt")
 
 [node name="debug_text" type="RichTextLabel" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = 12.0
-margin_top = -303.0
-margin_right = 517.0
-margin_bottom = -8.0
-custom_colors/default_color = Color( 1, 0.560784, 0.560784, 1 )
-fit_content_height = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+offset_top = -197.0
+offset_right = 351.0
+grow_vertical = 0
+theme_override_fonts/normal_font = ExtResource("3_dn54i")
+text = "test"
+fit_content = true
+scroll_active = false

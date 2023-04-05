@@ -1,0 +1,603 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqkjmu7slmw68"]
+
+[ext_resource type="ArrayMesh" uid="uid://b7gl2q54a1afn" path="res://models/bark/new_array_mesh.tres" id="1_6cfsd"]
+[ext_resource type="ArrayMesh" uid="uid://umw35ajiyvke" path="res://models/leaves/leaf_mesh.tres" id="2_yurfb"]
+
+[sub_resource type="BoxShape3D" id="2"]
+size = Vector3(2, 2, 2)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="mesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("1_6cfsd")
+
+[node name="static_body" type="StaticBody3D" parent="mesh"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh/static_body"]
+shape = SubResource("2")
+
+[node name="mesh2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 0)
+mesh = ExtResource("1_6cfsd")
+
+[node name="static_body" type="StaticBody3D" parent="mesh2"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh2/static_body"]
+shape = SubResource("2")
+
+[node name="mesh3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 0)
+mesh = ExtResource("1_6cfsd")
+
+[node name="static_body" type="StaticBody3D" parent="mesh3"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh3/static_body"]
+shape = SubResource("2")
+
+[node name="mesh30" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, 0)
+mesh = ExtResource("1_6cfsd")
+
+[node name="static_body" type="StaticBody3D" parent="mesh30"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh30/static_body"]
+shape = SubResource("2")
+
+[node name="mesh4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 0)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh4"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh4/static_body"]
+shape = SubResource("2")
+
+[node name="mesh9" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 0)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh9"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh9/static_body"]
+shape = SubResource("2")
+
+[node name="mesh18" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 0)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh18"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh18/static_body"]
+shape = SubResource("2")
+
+[node name="mesh28" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 7, 0)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh28"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh28/static_body"]
+shape = SubResource("2")
+
+[node name="mesh24" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1, 6, 0)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh24"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh24/static_body"]
+shape = SubResource("2")
+
+[node name="mesh25" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1, 6, 0)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh25"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh25/static_body"]
+shape = SubResource("2")
+
+[node name="mesh26" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh26"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh26/static_body"]
+shape = SubResource("2")
+
+[node name="mesh27" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh27"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh27/static_body"]
+shape = SubResource("2")
+
+[node name="mesh5" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1, 4, 0)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh5"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh5/static_body"]
+shape = SubResource("2")
+
+[node name="mesh6" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1, 4, 0)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh6"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh6/static_body"]
+shape = SubResource("2")
+
+[node name="mesh31" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2, 4, 0)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh31"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh31/static_body"]
+shape = SubResource("2")
+
+[node name="mesh32" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2, 4, -1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh32"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh32/static_body"]
+shape = SubResource("2")
+
+[node name="mesh33" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2, 4, 1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh33"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh33/static_body"]
+shape = SubResource("2")
+
+[node name="mesh34" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2, 4, -2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh34"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh34/static_body"]
+shape = SubResource("2")
+
+[node name="mesh35" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1, 4, -2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh35"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh35/static_body"]
+shape = SubResource("2")
+
+[node name="mesh36" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh36"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh36/static_body"]
+shape = SubResource("2")
+
+[node name="mesh37" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1, 4, -2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh37"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh37/static_body"]
+shape = SubResource("2")
+
+[node name="mesh38" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2, 4, -2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh38"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh38/static_body"]
+shape = SubResource("2")
+
+[node name="mesh39" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2, 4, -1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh39"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh39/static_body"]
+shape = SubResource("2")
+
+[node name="mesh40" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2, 4, 0)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh40"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh40/static_body"]
+shape = SubResource("2")
+
+[node name="mesh41" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2, 4, 1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh41"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh41/static_body"]
+shape = SubResource("2")
+
+[node name="mesh52" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2, 5, 0)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh52"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh52/static_body"]
+shape = SubResource("2")
+
+[node name="mesh53" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2, 5, -1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh53"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh53/static_body"]
+shape = SubResource("2")
+
+[node name="mesh54" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2, 5, 1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh54"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh54/static_body"]
+shape = SubResource("2")
+
+[node name="mesh55" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2, 5, -2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh55"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh55/static_body"]
+shape = SubResource("2")
+
+[node name="mesh56" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1, 5, -2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh56"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh56/static_body"]
+shape = SubResource("2")
+
+[node name="mesh57" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh57"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh57/static_body"]
+shape = SubResource("2")
+
+[node name="mesh58" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1, 5, -2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh58"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh58/static_body"]
+shape = SubResource("2")
+
+[node name="mesh59" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2, 5, -2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh59"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh59/static_body"]
+shape = SubResource("2")
+
+[node name="mesh60" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2, 5, -1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh60"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh60/static_body"]
+shape = SubResource("2")
+
+[node name="mesh61" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2, 5, 0)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh61"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh61/static_body"]
+shape = SubResource("2")
+
+[node name="mesh62" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2, 5, 1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh62"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh62/static_body"]
+shape = SubResource("2")
+
+[node name="mesh42" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2, 4, 2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh42"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh42/static_body"]
+shape = SubResource("2")
+
+[node name="mesh43" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh43"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh43/static_body"]
+shape = SubResource("2")
+
+[node name="mesh44" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1, 4, 2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh44"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh44/static_body"]
+shape = SubResource("2")
+
+[node name="mesh45" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1, 4, 2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh45"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh45/static_body"]
+shape = SubResource("2")
+
+[node name="mesh46" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2, 4, 2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh46"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh46/static_body"]
+shape = SubResource("2")
+
+[node name="mesh47" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2, 5, 2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh47"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh47/static_body"]
+shape = SubResource("2")
+
+[node name="mesh48" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh48"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh48/static_body"]
+shape = SubResource("2")
+
+[node name="mesh49" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1, 5, 2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh49"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh49/static_body"]
+shape = SubResource("2")
+
+[node name="mesh50" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1, 5, 2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh50"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh50/static_body"]
+shape = SubResource("2")
+
+[node name="mesh51" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2, 5, 2)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh51"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh51/static_body"]
+shape = SubResource("2")
+
+[node name="mesh7" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh7"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh7/static_body"]
+shape = SubResource("2")
+
+[node name="mesh29" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh29"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh29/static_body"]
+shape = SubResource("2")
+
+[node name="mesh8" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh8"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh8/static_body"]
+shape = SubResource("2")
+
+[node name="mesh19" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh19"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh19/static_body"]
+shape = SubResource("2")
+
+[node name="mesh10" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh10"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh10/static_body"]
+shape = SubResource("2")
+
+[node name="mesh11" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh11"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh11/static_body"]
+shape = SubResource("2")
+
+[node name="mesh20" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1, 5, -1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh20"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh20/static_body"]
+shape = SubResource("2")
+
+[node name="mesh21" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1, 5, 1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh21"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh21/static_body"]
+shape = SubResource("2")
+
+[node name="mesh22" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1, 5, 1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh22"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh22/static_body"]
+shape = SubResource("2")
+
+[node name="mesh63" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1, 6, 1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh63"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh63/static_body"]
+shape = SubResource("2")
+
+[node name="mesh23" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1, 5, -1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh23"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh23/static_body"]
+shape = SubResource("2")
+
+[node name="mesh64" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1, 6, -1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh64"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh64/static_body"]
+shape = SubResource("2")
+
+[node name="mesh65" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1, 6, 1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh65"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh65/static_body"]
+shape = SubResource("2")
+
+[node name="mesh66" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1, 6, -1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh66"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh66/static_body"]
+shape = SubResource("2")
+
+[node name="mesh12" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1, 5, 0)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh12"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh12/static_body"]
+shape = SubResource("2")
+
+[node name="mesh13" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1, 5, 0)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh13"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh13/static_body"]
+shape = SubResource("2")
+
+[node name="mesh14" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1, 4, -1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh14"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh14/static_body"]
+shape = SubResource("2")
+
+[node name="mesh15" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1, 4, -1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh15"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh15/static_body"]
+shape = SubResource("2")
+
+[node name="mesh16" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1, 4, 1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh16"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh16/static_body"]
+shape = SubResource("2")
+
+[node name="mesh17" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1, 4, 1)
+mesh = ExtResource("2_yurfb")
+
+[node name="static_body" type="StaticBody3D" parent="mesh17"]
+
+[node name="collision_shape" type="CollisionShape3D" parent="mesh17/static_body"]
+shape = SubResource("2")

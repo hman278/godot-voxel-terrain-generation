@@ -1,17 +1,8 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=2 format=3 uid="uid://b6nd62ii7xtnn"]
 
-[ext_resource path="res://meshlib/meshlib.meshlib" type="MeshLibrary" id=1]
+[ext_resource type="MeshLibrary" uid="uid://b76attfkgqjqc" path="res://meshlib/meshlib.meshlib" id="1"]
 
 [node name="gridmap" type="GridMap"]
-mesh_library = ExtResource( 1 )
-cell_size = Vector3( 1, 1, 1 )
-cell_octant_size = 16
-cell_center_y = false
-cell_scale = 0.5
-data = {
-"cells": PoolIntArray(  )
-}
-__meta__ = {
-"_editor_clip_": 0,
-"_editor_floor_": Vector3( 0, 2, 0 )
-}
+mesh_library = ExtResource("1")
+cell_size = Vector3(1, 1, 1)
+metadata/_editor_floor_ = Vector3(0, 3, 0)
